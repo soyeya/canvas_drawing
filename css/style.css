@@ -65,10 +65,10 @@ section{
 
 #drawingWrap #canvas{
 
-    width:500px;
+    width:80%;
     height:400px;
     margin:0 auto;
-    margin-left:250px;
+    margin-left:100px;
     margin-top:50px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #585858;
@@ -130,9 +130,21 @@ section{
 
     background-color: #ffee00;
 }
+
+.canvasList .colorBtn li:hover{
+
+    transform: scale(1.1);
+    transition: 800ms;
+
+}
+
 .canvasList .drawBtn{
 
     padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .canvasList .drawBtn button{
 
@@ -140,8 +152,29 @@ section{
     height:40px;
     margin:10px;
     border-radius: 3px;
+    background-color: #333;
+    color:#f4f4f4;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.canvasList .drawBtn button:hover{
+
     background-color: #f4f4f4;
     color:#333;
-    border:none;
+}
 
+.canvasList .drawBtn button a{
+
+    float:left;
+    color:#f4f4f4;
+}
+
+.canvasList .drawBtn button:hover a{
+
+    color:#333;
 }
